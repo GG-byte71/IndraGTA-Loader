@@ -1,0 +1,64 @@
+<Window
+	x:Class="Zeus.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" xmlns:local="clr-namespace:Zeus"
+	TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+	TextElement.FontWeight="Regular"
+	TextElement.FontSize="13"
+	TextOptions.TextFormattingMode="Ideal"
+	TextOptions.TextRenderingMode="Auto"
+	Background="#FF272727"
+	FontFamily="{DynamicResource MaterialDesignFont}"
+	Title="Zeus"
+	Height="346.225"
+	Width="260.409"
+	WindowStyle="ToolWindow"
+	WindowStartupLocation="CenterScreen">
+	<Grid>
+		<TextBlock
+			Margin="22,148,130,0"
+			Height="16"
+			VerticalAlignment="Top"
+			Foreground="#DDFFFFFF">Username</TextBlock>
+		<TextBox
+			Name="UsernameInput"
+			Height="23"
+			Margin="22,164,22,0"
+			TextWrapping="Wrap"
+			Text=""
+			VerticalAlignment="Top"
+			Foreground="#DDFFFFFF"
+			BorderBrush="#89FFFFFF"
+			CaretBrush="#FFB2B2B2"
+			SelectionBrush="#FFB2B2B2" />
+		<TextBlock
+			Margin="22,196,130,0"
+			Height="16"
+			VerticalAlignment="Top"
+			Foreground="#DDFFFFFF">Password</TextBlock>
+		<PasswordBox
+			Name="PasswordInput"
+			Height="23"
+			Margin="22,212,22,0"
+			Password=""
+			VerticalAlignment="Top"
+			Foreground="#DDFFFFFF"
+			BorderBrush="#89FFFFFF"
+			CaretBrush="#FFB2B2B2"
+			SelectionBrush="#FFB2B2B2" />
+		<Button
+			Name="InjectButton"
+			Content="Inject"
+			Margin="55,256,0,0"
+			VerticalAlignment="Top"
+			Height="28"
+			Background="#FFDEDEDE"
+			Foreground="#DD000000"
+			BorderBrush="#FFFFFFFF"
+			HorizontalAlignment="Left"
+			Width="142"
+			Click="InjectButton_Click" />
+		<Image
+			Margin="64,20,64,192"
+			Source="pack://application:,,,/Resources/logo simple.png"
+			RenderTransformOrigin="0.5,0.5" />
+	</Grid>
+</Window>
